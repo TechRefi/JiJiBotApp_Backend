@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JiJiBotApp_Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+728115add65a5736d48e79f94c802794d6abc5eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("JiJiBotApp_Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JiJiBotApp_Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
