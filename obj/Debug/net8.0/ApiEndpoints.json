@@ -364,7 +364,33 @@
     ]
   },
   {
-    "ContainingType": "TechRiFi.Controllers.Role.RoleController",
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Role.RoleController",
+    "Method": "GetRolePermissions",
+    "RelativePath": "api/Role/{roleId}/permissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Role.RolePermissionModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Role.RoleController",
     "Method": "AddRole",
     "RelativePath": "api/Role/add",
     "HttpMethod": "POST",
@@ -390,7 +416,7 @@
     ]
   },
   {
-    "ContainingType": "TechRiFi.Controllers.Role.RoleController",
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Role.RoleController",
     "Method": "DeleteRole",
     "RelativePath": "api/Role/delete",
     "HttpMethod": "POST",
@@ -416,7 +442,7 @@
     ]
   },
   {
-    "ContainingType": "TechRiFi.Controllers.Role.RoleController",
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Role.RoleController",
     "Method": "EditRole",
     "RelativePath": "api/Role/edit",
     "HttpMethod": "POST",
@@ -442,7 +468,53 @@
     ]
   },
   {
-    "ContainingType": "TechRiFi.Controllers.Role.RoleController",
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Role.RoleController",
+    "Method": "GetAvailablePermissions",
+    "RelativePath": "api/Role/permissions/available",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.Role.RolePermissionModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Role.RoleController",
+    "Method": "UpdateRolePermissions",
+    "RelativePath": "api/Role/permissions/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Role.RolePermissionsUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Role.RoleController",
     "Method": "Search",
     "RelativePath": "api/Role/search",
     "HttpMethod": "POST",
@@ -1082,6 +1154,26 @@
     "ReturnTypes": [
       {
         "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.UserRoleAssociation.UserRoleAssociationListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.WeatherForecast, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

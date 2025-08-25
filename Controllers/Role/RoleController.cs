@@ -5,8 +5,7 @@ using JiJiBotApp_Backend.Services.Role;
 using Microsoft.AspNetCore.Mvc;
 using JiJiBotApp_Backend.DTOs.SearchRequests.Role;
 
-
-namespace TechRiFi.Controllers.Role
+namespace JiJiBotApp_Backend.Controllers.Role
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -48,7 +47,7 @@ namespace TechRiFi.Controllers.Role
                     return HandleSuccess(model, "Role Name or Code Already Exists", totalCount);
                 }
 
-                return HandleSuccess(model, "Role added successfully", totalCount);
+                return HandleSuccess(model, "Role and permissions added successfully", totalCount);
             }
             catch (Exception ex)
             {
@@ -67,7 +66,7 @@ namespace TechRiFi.Controllers.Role
                 if (!isDeleted)
                     return HandleSuccess(false, "Failed to delete Role");
 
-                return HandleSuccess(isDeleted, "Role deleted successfully", totalCount);
+                return HandleSuccess(isDeleted, "Role and associated permissions deleted successfully", totalCount);
             }
             catch (Exception ex)
             {
@@ -97,12 +96,64 @@ namespace TechRiFi.Controllers.Role
                     return HandleSuccess(model, "Role Name or Code Already Exists", totalCount);
                 }
 
-                return HandleSuccess(model, "Role updated successfully", totalCount);
+                return HandleSuccess(model, "Role and permissions updated successfully", totalCount);
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, "Error processing Role update request");
                 return HandleError<List<RoleReturnModel>>(ex, "Failed to update Role");
+            }
+        }
+
+        // New endpoint for managing role permissions independently
+        [HttpPost("permissions/update")]
+        public async Task<ActionResult<ApiResponse<bool>>> UpdateRolePermissions([FromBody] RolePermissionsUpdateRequest request)
+        {
+            try
+            {
+                var (result, totalCount) = await roleService.UpdateRolePermissions(request);
+
+                if (!result)
+                    return HandleSuccess(false, "Failed to update role permissions");
+
+                return HandleSuccess(result, "Role permissions updated successfully", totalCount);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Error processing role permissions update request");
+                return HandleError<bool>(ex, "Failed to update role permissions");
+            }
+        }
+
+        // New endpoint to get permissions for a specific role
+        [HttpGet("{roleId}/permissions")]
+        public async Task<ActionResult<ApiResponse<List<RolePermissionModel>>>> GetRolePermissions(int roleId)
+        {
+            try
+            {
+                var (permissions, totalCount) = await roleService.GetRolePermissions(roleId);
+                return HandleSuccess(permissions, "Role permissions retrieved successfully", totalCount);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Error retrieving role permissions for roleId: {roleId}", roleId);
+                return HandleError<List<RolePermissionModel>>(ex, "Failed to retrieve role permissions");
+            }
+        }
+
+        // New endpoint to get all available permissions
+        [HttpGet("permissions/available")]
+        public async Task<ActionResult<ApiResponse<IEnumerable<RolePermissionModel>>>> GetAvailablePermissions()
+        {
+            try
+            {
+                var (permissions, totalCount) = await roleService.GetAvailablePermissions();
+                return HandleSuccess(permissions, "Available permissions retrieved successfully", totalCount);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Error retrieving available permissions");
+                return HandleError<IEnumerable<RolePermissionModel>>(ex, "Failed to retrieve available permissions");
             }
         }
     }

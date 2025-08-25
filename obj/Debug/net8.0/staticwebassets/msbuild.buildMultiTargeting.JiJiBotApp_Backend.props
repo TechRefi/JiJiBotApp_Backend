@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\JiJiBotApp_Backend.props" />
+</Project>

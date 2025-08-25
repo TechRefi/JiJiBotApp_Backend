@@ -9,5 +9,10 @@ namespace JiJiBotApp_Backend.Services.Role
         Task<(int roleId, int totalCount)> AddRole(RoleAddRequest request);
         Task<(bool result, int totalCount)> DeleteRole(RoleDeleteRequest request);
         Task<(int roleId, int totalCount)> EditRole(RoleUpdateRequest request);
+
+        // New methods for permission management
+        Task<(bool result, int totalCount)> UpdateRolePermissions(RolePermissionsUpdateRequest request);
+        Task<(List<RolePermissionModel> permissions, int totalCount)> GetRolePermissions(int roleId);
+        Task<(IEnumerable<RolePermissionModel> availablePermissions, int totalCount)> GetAvailablePermissions();
     }
 }

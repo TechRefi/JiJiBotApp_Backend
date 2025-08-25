@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"DqWk2E/c9N6Q75yrU8By8MLQvemGXEQtdpMyAC/GM3U=","Source":"JiJiBotApp_Backend","BasePath":"_content/JiJiBotApp_Backend","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "9END6Bqo3MUtFn9jCmUYCn4U+qBIg7SNjHzQNaTZKG0=",
+  "Source": "JiJiBotApp_Backend",
+  "BasePath": "_content/JiJiBotApp_Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
