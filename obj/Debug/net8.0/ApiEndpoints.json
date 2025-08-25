@@ -1,0 +1,1094 @@
+[
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Common.CommonController",
+    "Method": "GetDropdownItems",
+    "RelativePath": "api/Common/dropdown",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Common.DropdownRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Common.DropdownItem, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Company.CompanyController",
+    "Method": "AddCompany",
+    "RelativePath": "api/Company/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Company.AddCompanyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Company.CopmanyReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Company.CompanyController",
+    "Method": "DeleteCompany",
+    "RelativePath": "api/Company/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Company.DeleteCompanyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Company.CompanyController",
+    "Method": "EditCompany",
+    "RelativePath": "api/Company/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Company.UpdateCompanyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Company.CopmanyReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Company.CompanyController",
+    "Method": "Search",
+    "RelativePath": "api/Company/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Company.SearchCompanyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.Company.CompanyListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Login.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Login.LoginAuthRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[JiJiBotApp_Backend.DTOs.Model.Login.LoginModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Permission.PermissionController",
+    "Method": "AddPermission",
+    "RelativePath": "api/Permission/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Permission.PermissionRequest\u002BAddPermissionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Permission.PermissionReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Permission.PermissionController",
+    "Method": "DeletePermission",
+    "RelativePath": "api/Permission/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Permission.PermissionRequest\u002BDeletePermissionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Permission.PermissionController",
+    "Method": "EditPermission",
+    "RelativePath": "api/Permission/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Permission.PermissionRequest\u002BUpdatePermissionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Permission.PermissionReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Permission.PermissionController",
+    "Method": "Search",
+    "RelativePath": "api/Permission/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Permission.PermissionRequest\u002BSearchPermissionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.Permission.PermissionListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Repositories.RepositoriesController",
+    "Method": "AddRepository",
+    "RelativePath": "api/Repositories/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Repositories.RepositoryRequest\u002BAddRepositoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Repositories.RepositoriesReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Repositories.RepositoriesController",
+    "Method": "DeleteRepository",
+    "RelativePath": "api/Repositories/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Repositories.RepositoryRequest\u002BDeleteRepositoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Repositories.RepositoriesController",
+    "Method": "EditRepository",
+    "RelativePath": "api/Repositories/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Repositories.RepositoryRequest\u002BUpdateRepositoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Repositories.RepositoriesReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Repositories.RepositoriesController",
+    "Method": "SearchRepository",
+    "RelativePath": "api/Repositories/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Repositories.RepositoryRequest\u002BSearchRepositoryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.Repositories.RepositoriesListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TechRiFi.Controllers.Role.RoleController",
+    "Method": "AddRole",
+    "RelativePath": "api/Role/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Role.RoleAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Role.RoleReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TechRiFi.Controllers.Role.RoleController",
+    "Method": "DeleteRole",
+    "RelativePath": "api/Role/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Role.RoleDeleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TechRiFi.Controllers.Role.RoleController",
+    "Method": "EditRole",
+    "RelativePath": "api/Role/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Role.RoleUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Role.RoleReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TechRiFi.Controllers.Role.RoleController",
+    "Method": "Search",
+    "RelativePath": "api/Role/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Role.RoleSearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.Role.RoleListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.RolePermissionAssociation.RolePermissionAssociationController",
+    "Method": "Add",
+    "RelativePath": "api/RolePermissionAssociation/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.RolePermissionAssociation.RolePermissionAssociationRequest\u002BRolePermissionAssociationAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.RolePermissionAssociation.RolePermissionAssociationReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.RolePermissionAssociation.RolePermissionAssociationController",
+    "Method": "Delete",
+    "RelativePath": "api/RolePermissionAssociation/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.RolePermissionAssociation.RolePermissionAssociationRequest\u002BRolePermissionAssociationDeleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.RolePermissionAssociation.RolePermissionAssociationController",
+    "Method": "Edit",
+    "RelativePath": "api/RolePermissionAssociation/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.RolePermissionAssociation.RolePermissionAssociationRequest\u002BRolePermissionAssociationUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.RolePermissionAssociation.RolePermissionAssociationReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.RolePermissionAssociation.RolePermissionAssociationController",
+    "Method": "Search",
+    "RelativePath": "api/RolePermissionAssociation/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.RolePermissionAssociation.RolePermissionAssociationRequest\u002BRolePermissionAssociationSearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.RolePermissionAssociation.RolePermissionAssociationListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Screen.ScreenController",
+    "Method": "AddScreen",
+    "RelativePath": "api/Screen/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Screen.AddScreenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Screen.ScreenReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Screen.ScreenController",
+    "Method": "DeleteScreen",
+    "RelativePath": "api/Screen/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Screen.DeleteScreenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Screen.ScreenController",
+    "Method": "EditScreen",
+    "RelativePath": "api/Screen/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Screen.UpdateScreenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.Screen.ScreenReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.Screen.ScreenController",
+    "Method": "SearchScreen",
+    "RelativePath": "api/Screen/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.Screen.SearchScreenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.Screen.ScreenListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TechRiFi.Controllers.ScreenAssociation.ScreenAssociationController",
+    "Method": "AddScreenAssociation",
+    "RelativePath": "api/ScreenAssociation/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.ScreenAssociation.ScreenAssociationAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.ScreenAssociation.ScreenAssociationReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TechRiFi.Controllers.ScreenAssociation.ScreenAssociationController",
+    "Method": "DeleteScreenAssociation",
+    "RelativePath": "api/ScreenAssociation/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.ScreenAssociation.ScreenAssociationDeleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TechRiFi.Controllers.ScreenAssociation.ScreenAssociationController",
+    "Method": "EditScreenAssociation",
+    "RelativePath": "api/ScreenAssociation/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.ScreenAssociation.ScreenAssociationUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.ScreenAssociation.ScreenAssociationReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TechRiFi.Controllers.ScreenAssociation.ScreenAssociationController",
+    "Method": "Search",
+    "RelativePath": "api/ScreenAssociation/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.ScreenAssociation.ScreenAssociationSearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.Screen.ScreenListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.User.UserController",
+    "Method": "AddUser",
+    "RelativePath": "api/User/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.User.UserAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.User.UserReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.User.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/User/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.User.UserDeleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.User.UserController",
+    "Method": "EditUser",
+    "RelativePath": "api/User/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.User.UserUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.User.UserReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.User.UserController",
+    "Method": "Search",
+    "RelativePath": "api/User/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.User.UserSearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.User.UserListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.UserRepoAssociation.UserRepoAssociationController",
+    "Method": "Add",
+    "RelativePath": "api/UserRepoAssociation/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.UserRepoAssociation.UserRepoAssociationAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.UserRepoAssociation.UserRepoAssociationReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.UserRepoAssociation.UserRepoAssociationController",
+    "Method": "Delete",
+    "RelativePath": "api/UserRepoAssociation/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.UserRepoAssociation.UserRepoAssociationDeleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.UserRepoAssociation.UserRepoAssociationController",
+    "Method": "Edit",
+    "RelativePath": "api/UserRepoAssociation/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.UserRepoAssociation.UserRepoAssociationUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[JiJiBotApp_Backend.DTOs.Model.UserRepoAssociation.UserRepoAssociationReturnModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.UserRepoAssociation.UserRepoAssociationController",
+    "Method": "Search",
+    "RelativePath": "api/UserRepoAssociation/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.UserRepoAssociation.UserRepoAssociationSearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.UserRepoAssociation.UserRepoAssociationListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.UserRoleAssociation.UserRoleAssociationController",
+    "Method": "Add",
+    "RelativePath": "api/UserRoleAssociation/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.UserRoleAssociation.UserRoleAssociationAddRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.UserRoleAssociation.UserRoleAssociationController",
+    "Method": "Delete",
+    "RelativePath": "api/UserRoleAssociation/delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.UserRoleAssociation.UserRoleAssociationDeleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.UserRoleAssociation.UserRoleAssociationController",
+    "Method": "Edit",
+    "RelativePath": "api/UserRoleAssociation/edit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.UserRoleAssociation.UserRoleAssociationUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "JiJiBotApp_Backend.Controllers.UserRoleAssociation.UserRoleAssociationController",
+    "Method": "Search",
+    "RelativePath": "api/UserRoleAssociation/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "JiJiBotApp_Backend.DTOs.SearchRequests.UserRoleAssociation.UserRoleAssociationSearchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "JiJiBotApp_Backend.DTOs.Model.Response.ApiResponse\u00601[[System.Collections.Generic.IEnumerable\u00601[[JiJiBotApp_Backend.DTOs.Model.UserRoleAssociation.UserRoleAssociationListModel, JiJiBotApp_Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
